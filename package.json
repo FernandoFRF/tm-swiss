@@ -1,0 +1,23 @@
+{
+  "name": "table-tennis-swiss",
+  "version": "1.0.0",
+  "description": "Swiss-system table tennis tournament manager (Node + simple web UI)",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js"
+  },
+  "keywords": [
+    "table-tennis",
+    "ping-pong",
+    "tournament",
+    "swiss-system",
+    "node",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}

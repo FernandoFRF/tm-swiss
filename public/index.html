@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Table Tennis Swiss</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Table Tennis Swiss</h1>
+
+    <section>
+      <h2>Jogadores</h2>
+      <form id="player-form">
+        <input type="text" id="player-name" placeholder="Nome do jogador" required />
+        <button type="submit">Adicionar jogador</button>
+      </form>
+      <ul id="players-list"></ul>
+    </section>
+
+    <section>
+      <h2>Torneios</h2>
+      <form id="tournament-form">
+        <input type="text" id="tournament-name" placeholder="Nome do torneio" required />
+        <button type="submit">Criar torneio</button>
+      </form>
+
+      <label for="tournament-select">Selecionar torneio:</label>
+      <select id="tournament-select"></select>
+      <button id="refresh-tournament">Recarregar</button>
+    </section>
+
+    <section id="registration-section">
+      <h2>Inscrição de jogadores</h2>
+      <div class="row">
+        <label for="reg-player-select">Jogador:</label>
+        <select id="reg-player-select"></select>
+        <button id="register-player-btn">Inscrever no torneio</button>
+      </div>
+      <div>
+        <h3>Jogadores inscritos</h3>
+        <ul id="tournament-players-list"></ul>
+      </div>
+    </section>
+
+    <section id="control-section">
+      <h2>Rodadas</h2>
+      <button id="start-tournament-btn">Iniciar torneio / Gerar 1ª rodada</button>
+      <button id="next-round-btn">Gerar próxima rodada</button>
+      <div id="rounds-container"></div>
+    </section>
+
+    <section id="standings-section">
+      <h2>Classificação</h2>
+      <table id="standings-table">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Jogador</th>
+            <th>Vitórias</th>
+            <th>Derrotas</th>
+            <th>Sets Vencidos</th>
+            <th>Sets Perdidos</th>
+            <th>% Sets</th>
+            <th>Pontos</th>
+            <th>Buchholz</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
